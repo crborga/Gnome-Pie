@@ -67,7 +67,7 @@ else()
     LIST(APPEND VALA_DEFINES --define HAVE_GTK_3_22)
 endif()
 
-# fallback to gnome-menus2 if gnome-menus3 wasn't found
+# fallback to mate-menus2 if mate-menus3 wasn't found
 if (${GMENU3_FOUND})
     LIST(APPEND CFLAGS -DHAVE_GMENU_3)
     LIST(APPEND VALA_DEFINES --define HAVE_GMENU_3)
